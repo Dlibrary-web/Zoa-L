@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zoa'Library</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="Asset1/221b7140-1dc7-46f4-90a9-92c625d47d03_20250916_172513_0000.png">
+</head>
+<body>
+  <header>
+  <div class="navbar">
+<div class="nav-left">
+  <div class="logo-group">
+    <img src="Asset1/221b7140-1dc7-46f4-90a9-92c625d47d03_20250916_172513_0000.png" alt="Logo" class="logo-img" />
+    <div class="logo-stack">
+      <h1 class="logo-text">Zoa'Library</h1>
+      <p class="subtitle">がんばって ナジワさん </p>
+    </div>
+  </div>
+</div>
+    <div class="nav-right">
+      <input type="text" id="searchInput" placeholder="Cari materi kuliah..." oninput="filterBooks()" />
+      <button class="upload-btn" onclick="toggleForm()">⎙</button>
+    </div>
+  </div>
+</header>
+
+  <div id="uploadForm" class="hidden form-container">
+    <h3>Tambah Materi Baru</h3>
+    <input type="text" id="judulInput" placeholder="Mata Kuliah" />
+    <textarea id="materiInput" placeholder="Judul Materi"></textarea>
+    <input type="text" id="linkInput" placeholder="Link Materi" />
+    <button onclick="tambahMateri()">Tambah</button>
+  </div>
+
+  <main id="bookContainer">
+    <!-- Materi default bisa ditambahkan di sini -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
